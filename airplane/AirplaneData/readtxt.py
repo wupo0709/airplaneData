@@ -84,7 +84,7 @@ try:
     if rg.jiayouche == 0 and ai.jiayouche == 0:
         jianchu_jiayouche = "N"
     else:
-        jianchu_jiayouche = '{:.3f}'.format(rg.jiayouche/ai.jiayouche)[:5]+"%"
+        jianchu_jiayouche = '{:.3f}'.format(rg.jiayouche/ai.jiayouche*100)[:5]+"%"
 except Exception as e:
     print(e)
 try:
@@ -99,7 +99,7 @@ try:
     if rg.kecangmen == 0 and ai.kecangmen == 0:
         jianchu_kecangmen = "N"
     else:
-        jianchu_kecangmen = '{:.3f}'.format(rg.kecangmen/ai.kecangmen)[:5]+"%"
+        jianchu_kecangmen = '{:.3f}'.format(rg.kecangmen/ai.kecangmen*100)[:5]+"%"
 except Exception as e:
     print(e)
 try:
